@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One"
+      rel="stylesheet"
+      type="text/css" />
+      <link rel="stylesheet" href="style.css">
+      
+    <title>Document</title>
+</head>
+<body>
+    <header></header>
+    <nav>
+        <ul>
+            <li id="accueil" onmouseover="visible_accueil()" onmouseout="normal_accueil()"><a href="#">accueil</a>
+                
+                    <ul class="show " id="ul-accueil">
+                        <li class="show-item"><a href="#">premier</a></li>
+                        <li class="show-item"><a href="#">deuxieme</a></li>
+                        <li class="show-item"><a href="#">troisieme</a></li>
+                    </ul>
+                
+            </li>
+            <li onmouseover="visible_contact()" onmouseout="normal_contact()"><a href="#">contact</a>
+                <ul class="show" id="ul-contact">
+                    <li class="show-item"><a href="#">premier</a></li>
+                    <li class="show-item"><a href="#">deuxieme</a></li>
+                    <li class="show-item"><a href="#">troisieme</a></li>
+                </ul></li>
+            <li onmouseover="visible_projet()" onmouseout="normal_projet()"><a href="#">projet</a>
+                <ul class="show" id="ul-projet">
+                    <li class="show-item"><a href="#">premier</a></li>
+                    <li class="show-item"><a href="#">deuxieme</a></li>
+                    <li class="show-item"><a href="#">troisieme</a></li>
+                </ul></li>
+            <li onmouseover="visible_equipe()" onmouseout="normal_equipe()"><a href="#">equipe</a>
+                <ul class="show" id="ul-equipe">
+                    <li class="show-item"><a href="#">premier</a></li>
+                    <li class="show-item"><a href="#">deuxieme</a></li>
+                    <li class="show-item"><a href="#">troisieme</a></li>
+                </ul></li>
+        </ul>
+        <form>
+            <input type="search" name="q" placeholder="rechercher">
+            <input type="submit" value="lancer!">
+        </form>
+    </nav>
+    <main>
+        <article>
+            <h2>En-tête d'article</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Donec a diam
+              lectus. Set sit amet ipsum mauris. Maecenas congue ligula as quam
+              viverra nec consectetur ant hendrerit. Donec et mollis dolor. Praesent
+              et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt
+              congue enim, ut porta lorem lacinia consectetur.
+            </p>
+    
+            <h3>Sous‑section</h3>
+            <p>
+              Donec ut librero sed accu vehicula ultricies a non tortor. Lorem ipsum
+              dolor sit amet, consectetur adipisicing elit. Aenean ut gravida lorem.
+              Ut turpis felis, pulvinar a semper sed, adipiscing id dolor.
+            </p>
+            <p>
+              Pelientesque auctor nisi id magna consequat sagittis. Curabitur
+              dapibus, enim sit amet elit pharetra tincidunt feugiat nist imperdiet.
+              Ut convallis libero in urna ultrices accumsan. Donec sed odio eros.
+            </p>
+    
+            <h3>Autre sous‑section</h3>
+            <p>
+              Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum
+              soclis natoque penatibus et manis dis parturient montes, nascetur
+              ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem
+              facilisis semper ac in est.
+            </p>
+            <p>
+              Vivamus fermentum semper porta. Nunc diam velit, adipscing ut
+              tristique vitae sagittis vel odio. Maecenas convallis ullamcorper
+              ultricied. Curabitur ornare, ligula semper consectetur sagittis, nisi
+              diam iaculis velit, is fringille sem nunc vet mi.
+            </p>
+          </article>
+          <aside>
+            <h2>en relation</h2>
+            <ul>
+                <li><a href="#">Combien j'aime être près des rivages</a></li>
+          <li><a href="#">Combien j'aime être près de la mer</a></li>
+          <li><a href="#">Bien que dans le nord de l'Angleterre</a></li>
+          <li><a href="#">Il n'arrête jamais de pleuvoir</a></li>
+          <li><a href="#">Eh bien…</a></li>
+            </ul>
+          </aside>
+    </main>
+    <footer>
+        <p>©Copyright 2021 par GRACEK. Tous droits reversés.</p>
+    </footer>
+    <script src="style.js"></script>
+    <script>
+        function normal_accueil(){
+    document.getElementById('ul-accueil').style.visibility="hidden";
+}
+function visible_accueil(){
+    document.getElementById('ul-accueil').style.visibility="visible";
+}
+    </script>
+</body>
+</html>
